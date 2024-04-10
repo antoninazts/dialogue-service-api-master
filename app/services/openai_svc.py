@@ -1,6 +1,7 @@
-import requests
-from app.core.config import settings
+# import requests
+# from app.core.config import settings
 import time
+import random
 
 
 def generate_openai_prompt(prompt: str) -> str:
@@ -28,5 +29,5 @@ def generate_openai_prompt(prompt: str) -> str:
     # return result['choices'][0]['message']['content']
 
     time.sleep(10)
-    return "test_77"
+    return f"answer: {random.randint(0, 10)}"
 
